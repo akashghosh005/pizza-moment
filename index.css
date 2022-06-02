@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url('pizza_1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(242, 250, 6);
+    
+}
+
+.container{
+    border-color: #fff;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(242, 250, 6);
+    opacity: 1.2;
+}
+
+.userdetails{
+    
+    margin: 10px; 
+    border-radius: 8px;
+    
+}
+
+#fname, #email, #Phnum, #coup{
+    border-radius: 8px;
+    text-align: center;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

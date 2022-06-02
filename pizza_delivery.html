@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="delivery" class="container">
+
+        <form name="myform" action="final.html" onsubmit="return validform()" method="POST">
+        <p>Choose the delicious pizza type</p>
+            <div class="class1" id="veg_pizza1">
+                <strong style="color: rgb(243, 147, 92)">PIZZA FORMULA:</strong><br>
+                <label><input type="radio" id="simpveg" name="vegpizza1" value="simple veg">Simple veg</label><br>
+                
+                <label><input type="radio" id="vegsupr" name="vegpizza1" value="veg supreme">Veg supreme</label><br>
+
+                <label><input type="radio" id="vegdelight" name="vegpizza1" value="veg delight">Veg delight</label><br><br>
+            </div>
+
+            <div class="class2" id="veg_pizza2">
+                <strong style="color: rgb(243, 147, 92)">SIZE:</strong><br>
+                <label ><input type="radio" id="perpan" name="vegpizza2" value="Personal Pan">Personal pan</label><br>
+
+                <label><input type="radio" id="medium" name="vegpizza2" value="Medium">Medium</label><br>
+
+                <label><input type="radio" id="large" name="vegpizza2" value="Large">Large </label>
+                <br><br>
+            </div>
+
+            <div class="class3" id="veg_pizza3">
+                <strong style="color: rgb(243, 147, 92)">CRUST:</strong><br>
+                <label ><input type="radio" id="thin" name="vegpizza3" value="Thin">Thin</label><br>
+
+                <label><input type="radio" id="normal" name="vegpizza3" value="Normal">Medium</label><br>
+
+                <label><input type="radio" id="special" name="vegpizza3" value="Special">Special</label><br><br>
+            </div>
+
+            <div class="payment_class">
+                <label for="paymentGate">
+                    <strong style="color: rgb(243, 147, 92)">PAYMENT METHOD:</strong><br>
+                </label>
+                <select name="payment-method" id="paymeth">
+                    <option value="COD">Cash on delivery</option>
+                    <option value="UPI">UPI</option>
+                    <option value="GooglePay">Google Pay</option>
+                    <option value="Card Payment">Credit/Debit Payment</option>
+                </select>
+            </div><br><br>
+            <div class="coupon_class">
+                <input type="text" id="coup" name="coupcode" value="">
+                <label for="coupcode">
+                    <p>Coupon</p>
+                </label>
+                <span id="error_coup" class="text-danger font-weight-bold" style="color: red"></span><br>
+            </div>
+            <div class="terms_cond_check">
+                <label for="checkbox">
+                    <input id="checkbox" type="checkbox" name="terms"> I agree to these<a href="#" style="color: cyan">Terms and Conditions</a>.</label><br>
+                <span id="error_checkbox" class="text-danger font-weight-bold" style="color: red"></span><br>
+              </div>
+            <input type="submit" name="SubmitButton" value="Submit">
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript" src="index.js"></script>
+</body>
+</html>

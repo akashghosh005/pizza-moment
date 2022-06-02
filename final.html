@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        Welcome to Pizza Club   
+        <div id="hello" style="color: cyan"></div>
+        <div id="hello2" style="color: cyan"></div>
+    </div>
+    <script>
+        window.localStorage.getItem('user');
+        var obj_user = JSON.parse(window.localStorage.getItem('user'))
+        document.getElementById("hello").innerHTML= (`${obj_user.user_name} <br/> ${obj_user.user_email} <br/> ${obj_user.user_numb}`);
+
+        window.localStorage.getItem('pizza_user');
+        var obj_user_choice = JSON.parse(window.localStorage.getItem('pizza_user'))
+        document.getElementById("hello2").innerHTML= (`  ${obj_user_choice.user_vegpizza1} <br/> ${obj_user_choice.user_vegpizza2} <br/> ${obj_user_choice.user_vegpizza3}`);
+    </script>
+</body>
+</html>

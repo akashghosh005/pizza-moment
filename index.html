@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="casio" class="container">
+        <form name="myform" action="pizza_delivery.html" onsubmit="return MyFunc()" method="POST">
+            <div class="class_user">
+                <label>Name</label>
+                <input type="text" name="fname"><br>
+                <span id="error_name" class="text-danger font-weight-bold"></span><br>
+                <label>Email</label>    
+                <input type="email" name="email"><br>
+                <span id="error_email" class="text-danger font-weight-bold"></span><br>
+                <label>Pho num.</label>
+                <input name="Phnum"><br>
+                <span id="error_numb" class="text-danger font-weight-bold"></span><br>
+            </div>
+            <input type="submit" name="SubmitButton" value="Submit">
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
